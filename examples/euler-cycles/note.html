@@ -1,0 +1,552 @@
+<!DOCTYPE html><html><head>
+      <title>note</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/edurbrito/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.5.12/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  " id="custom">
+      <style>#custom {
+  font-family: "Handlee", cursive;
+  text-align: justify;
+  font-weight: 400;
+}
+#custom h1 {
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30%;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+#custom h2 {
+  text-transform: capitalize;
+  color: gray;
+  letter-spacing: 2px;
+  line-height: 30%;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 26px;
+}
+#custom h2::before {
+  content: "⋙ ";
+}
+#custom h3 {
+  font-weight: 200;
+  font-size: 20px;
+  color: gray;
+  margin: 26px;
+}
+#custom h3::before {
+  color: #5c5c5c;
+  content: "⋗ ";
+}
+#custom h4 {
+  font-weight: 200;
+  font-size: 18px;
+  color: gray;
+  margin: 20px;
+}
+#custom h4::before {
+  content: "# ";
+}
+#custom h5 {
+  padding: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  color: gray;
+  margin: 20px;
+}
+#custom h5::before {
+  content: "# ";
+}
+#custom h6 {
+  text-align: right;
+  background-color: #e9e9e9;
+  padding: 3px;
+  font-weight: 300;
+  color: black;
+  border-right: 3px solid #6e6e6e;
+  padding-right: 10px;
+  margin: 20px;
+}
+#custom blockquote {
+  background-color: #f5f5f5;
+  color: black;
+}
+#custom blockquote:before {
+  content: "◬ Nota: ";
+}
+#custom img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#custom table {
+  width: 100%;
+  text-align: justify;
+  font-weight: 400;
+  margin: 0;
+  display: inline-table;
+}
+#custom th {
+  border: none;
+  text-align: center;
+  font-weight: 400;
+}
+#custom td {
+  text-align: left;
+}
+#custom pre {
+  background-color: rgba(1, 1, 1, 0.075);
+  font-weight: 500;
+  font-family: "Handlee", cursive;
+}
+#custom p {
+  margin-bottom: 2px;
+}
+#custom ul {
+  margin-block-end: 0;
+  margin-bottom: 2px;
+}
+#custom hr {
+  visibility: hidden;
+  margin: 0px;
+  page-break-after: always;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&amp;display=swap" rel="stylesheet">
+<h1 class="mume-header" id="circuitos-de-euler">Circuitos de Euler</h1>
+
+<h6 class="mume-header" id="caminho-de-euler-caminho-que-visita-cada-aresta-exatamente-uma-vez"><strong>Caminho de Euler</strong>: caminho que visita cada aresta exatamente uma vez</h6>
+
+<h6 class="mume-header" id="circuito-de-euler-caminho-de-euler-que-come%C3%A7a-e-acaba-no-mesmo-v%C3%A9rtice"><strong>Circuito de Euler</strong>: caminho de Euler que come&#xE7;a e acaba no mesmo v&#xE9;rtice</h6>
+
+<h4 class="mume-header" id="condi%C3%A7%C3%B5es-necess%C3%A1rias-e-suficientes">Condi&#xE7;&#xF5;es necess&#xE1;rias e suficientes:</h4>
+
+<table>
+<tbody><tr>
+<td>
+<p>Um grafo <u>n&#xE3;o dirigido</u> cont&#xE9;m um <strong>circuito de Euler</strong> sse</p>
+<ol>
+<li>&#xE9; conexo e</li>
+<li>cada v&#xE9;rtice tem grau (n&#xFA;mero de arestas incidentes) par.</li>
+</ol>
+<p>Um grafo <u>n&#xE3;o dirigido</u> cont&#xE9;m um <strong>caminho de Euler</strong> sse</p>
+<ol>
+<li>&#xE9; conexo e</li>
+<li>todos menos dois v&#xE9;rtices t&#xEA;m grau par (estes dois v&#xE9;rtices ser&#xE3;o os v&#xE9;rtices de in&#xED;cio e fim do caminho).</li>
+</ol>
+<blockquote>
+<p>Circuito = Caminho + Identifica&#xE7;&#xE3;o da origem e do destino<br>
+Circuito mais restrito que Caminho</p>
+</blockquote>
+</td>
+<td>
+<p>Um grafo <u>dirigido</u> cont&#xE9;m um <strong>circuito de Euler</strong> sse</p>
+<ol>
+<li>&#xE9; (fortemente) conexo e</li>
+<li>cada v&#xE9;rtice tem o mesmo grau de entrada e de sa&#xED;da.</li>
+</ol>
+<p>Um grafo <u>dirigido</u> cont&#xE9;m um <strong>caminho de Euler</strong> sse</p>
+<ol>
+<li>&#xE9; (fortemente) conexo e</li>
+<li>todos menos dois v&#xE9;rtices t&#xEA;m o mesmo grau de entrada e de sa&#xED;da, e os dois v&#xE9;rtices t&#xEA;m graus de entrada e de sa&#xED;da que diferem de 1.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>
+<p><img src="images/euler-ndgraphs.png" alt></p>
+</td>
+<td>
+<p><img src="images/euler-dgraph.png" alt></p>
+</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 class="mume-header" id="pesquisa-em-profundidade">Pesquisa em Profundidade</h2>
+
+<p>Se o grafo satisfizer as condi&#xE7;&#xF5;es necess&#xE1;rias e suficientes, esta pesquisa termina necessariamente no v&#xE9;rtice de partida, formando um circuito, embora n&#xE3;o necessariamente de Euler</p>
+<table>
+<tbody><tr><td width="60%">
+<ol>
+<li>Escolher um v&#xE9;rtice qualquer e efetuar uma pesquisa em profundidade a partir desse v&#xE9;rtice</li>
+<li>Enquanto existirem arestas por visitar
+<ol>
+<li>Procurar o primeiro v&#xE9;rtice no caminho (circuito) obtido at&#xE9; ao momento que possua uma aresta n&#xE3;o percorrida</li>
+<li>Lan&#xE7;ar uma sub-pesquisa em profundidade a partir desse v&#xE9;rtice (sem voltar a percorrer arestas j&#xE1; percorridas)</li>
+<li>Inserir o resultado (circuito) no caminho principal</li>
+</ol>
+</li>
+</ol>
+</td>
+<td>
+<img src="images/euler-dps.png" width="100%">
+<blockquote>
+<p>Tempo de execu&#xE7;&#xE3;o: O(|E| + |V|)<br>
+Cada v&#xE9;rtice e aresta &#xE9; percorrido uma &#xFA;nica vez -  Usam-se listas ligadas para efetuar inser&#xE7;&#xF5;es em tempo constante</p>
+</blockquote>
+</td>
+</tr></tbody></table>
+<h3 class="mume-header" id="problema-do-carteiro-chin%C3%AAs">Problema do carteiro chin&#xEA;s</h3>
+
+<p>Dado um grafo pesado conexo G=(V,E), encontrar um caminho fechado (i.e., com in&#xED;cio e fim no mesmo v&#xE9;rtice) de peso m&#xED;nimo que atravesse cada aresta de G pelo menos uma vez &#xE9; o <strong>percurso &#xF3;timo do carteiro Chin&#xEA;s</strong>. A um caminho fechado (n&#xE3;o necessariamente de peso m&#xED;nimo) que atravesse cada aresta pelo menos uma vez chama-se <strong>percurso do carteiro</strong>.</p>
+<blockquote>
+<p>Se o grafo G n&#xE3;o for Euleriano, pode-se construir um grafo Euleriano G* duplicando algumas arestas de G, selecionadas por forma a conseguir um grafo Euleriano com peso total m&#xED;nimo.</p>
+</blockquote>
+<hr>
+<h2 class="mume-header" id="grafos-n%C3%A3o-dirigidos">Grafos n&#xE3;o dirigidos</h2>
+
+<table>
+<tbody><tr>
+<td>
+<ol>
+<li>Achar todos os v&#xE9;rtices de grau &#xED;mpar em G. Seja k o n&#xFA;mero (par!) destes v&#xE9;rtices. Se k=0, fazer G*=G e saltar para o passo 6.</li>
+<li>Achar os caminhos mais curtos e dist&#xE2;ncias m&#xED;nimas entre todos os pares de v&#xE9;rtices de grau &#xED;mpar em G.</li>
+</ol>
+</td>
+<td>
+<img src="images/euler-nd1.png" width="70%">
+<img src="images/euler-nd2.png" width="30%">
+</td>
+</tr>
+<tr>
+<td>
+<ol start="3">
+<li>
+<p>Construir um grafo completo G&apos; com os v&#xE9;rtices de grau &#xED;mpar de G ligados entre si por arestas de peso igual &#xE0; dist&#xE2;ncia m&#xED;nima calculada no passo 2.</p>
+</li>
+<li>
+<p>Encontrar um emparelhamento perfeito (envolvendo todos os v&#xE9;rtices) de peso m&#xED;nimo em G&apos;. Isto corresponde a emparelhar os v&#xE9;rtices de grau &#xED;mpar de G, minimizando a soma das dist&#xE2;ncias entre v&#xE9;rtices emparelhados.</p>
+</li>
+</ol>
+</td>
+<td>
+<p><img src="images/euler-nd4.png" alt></p>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="5">
+<li>Para cada par (u, v) no emparelhamento perfeito obtido, adicionar pseudo-arestas (arestas paralelas duplicadas) a G ao longo de um caminho mais curto entre u e v. Seja G* o grafo resultante.</li>
+<li>Achar um circuito de Euler em G*. Este circuito &#xE9; um percurso &#xF3;timo do carteiro Chin&#xEA;s.</li>
+</ol>
+</td>
+<td>
+<p><img src="images/euler-nd6.png" alt></p>
+</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 class="mume-header" id="grafos-dirigidos">Grafos dirigidos</h2>
+
+<table>
+<tbody><tr>
+<td>
+<ol>
+<li>No grafo G dado, identificar os v&#xE9;rtices com nos diferentes de arestas a entrar e a sair</li>
+<li>Determinar os caminhos mais curtos de v&#xE9;rtices que t&#xEA;m d&#xE9;fice de sa&#xED;das para v&#xE9;rtices que t&#xEA;m d&#xE9;fice de entradas e representar as dist&#xE2;ncias respetivas num grafo bipartido G&#x2019;.</li>
+</ol>
+<blockquote>
+<p>Os V&#xE9;rtices s&#xE3;o anotados com multiplicidade (n&#xFA;mero de parelhas em que deve participar) igual ao d&#xE9;fice absoluto</p>
+</blockquote>
+</td>
+<td>
+<img src="images/euler-d1.png">
+<img src="images/euler-d2.png">
+</td>
+</tr>
+<tr>
+<td>
+<ol start="3">
+<li>Formular problema de emparelhamento &#xF3;ptimo como problema de fluxo m&#xE1;ximo de custo m&#xED;nimo e resolver.</li>
+</ol>
+</td>
+<td>
+<p><img src="images/euler-d3.png" alt></p>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="4">
+<li>Obter grafo Euleriano G*, duplicando em G os caminhos mais curtos entre os v&#xE9;rtices emparelhados no passo 3, e obter um circuito Euleriano.</li>
+</ol>
+</td>
+<td>
+<p><img src="images/euler-d4.png" alt></p>
+</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
