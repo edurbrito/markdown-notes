@@ -1,0 +1,25 @@
+{
+  "name": "markdown-notes",
+  "version": "1.0.0",
+  "description": "Templates for your Markdown Notes",
+  "main": "md-notes.js",
+  "directories": {"example": "examples"},
+  "scripts": {"start": "node ."},
+  "keywords": [
+    "cli",
+    "markdown",
+    "notes"
+  ],
+  "author": "edurbrito",
+  "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : ""
+  },
+  "dependencies": {
+    "inquirer": "^7.3.0"
+  },
+  "bin": {
+    "md-notes": "./md-notes.js"
+  }
+}
