@@ -1,4 +1,6 @@
-<img src="./images/logo.png" style="margin-left: auto; margin-right: auto; display: block;">
+<p align="center">
+  <img src="./images/logo.png" style="margin-left: auto; margin-right: auto; display: block; height: 60%">
+</p>
 
 ----
 
