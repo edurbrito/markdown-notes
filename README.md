@@ -25,7 +25,7 @@
 
 ## Overview
 
-**Based on some effective study methods (Feynman Technique, Flashcards, Cornell Note Taking Method, Charting Method, Split Page Method etc...), these markdown templates are designed to help on creating better study materials, faster and directly from your computer. Only markdown or html/css skills are required. The styles fully customizable!**
+**Based on some effective study methods (Feynman Technique, Flashcards, Cornell Note Taking Method, Charting Method, Split Page Method etc...), these markdown templates are designed to help on creating better study materials, faster and directly from your computer. Only markdown or html/css skills are required. The styles are fully customizable!**
 
 All the working files are contained in these folders:
 * [Templates](templates/) - for the markdown templates
