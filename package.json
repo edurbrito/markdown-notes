@@ -7,7 +7,9 @@
     "example": "examples"
   },
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "test": "jest --coverage --detectOpenHandles",
+    "pretest": "eslint . --fix"
   },
   "keywords": [
     "cli",
@@ -32,6 +34,11 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.1.0"
+  },
+  "jest": {
+    "coverageDirectory": "./tests/coverage/",
+    "collectCoverage": true
   }
 }

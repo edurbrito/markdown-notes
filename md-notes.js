@@ -3,33 +3,7 @@
 var inquirer = require('inquirer')
 var fs = require('fs')
 var path = require('path')
-
-var questions = [
-  {
-    type: 'list',
-    name: 'type',
-    message: 'What type of note?',
-    choices: ['Note', 'Q&A'],
-    filter: function (val) {
-      return val.toLowerCase().replace(/\s/g, '').trim()
-    }
-  },
-  {
-    type: 'list',
-    name: 'theme',
-    message: 'What theme for the note?',
-    choices: ['Default'],
-    filter: function (val) {
-      return val.toLowerCase().replace(/\s/g, '').trim()
-    }
-  },
-  {
-    type: 'confirm',
-    name: 'directory',
-    message: 'Create "./images" directory?',
-    default: true
-  }
-]
+var questions = require('./questions').questions
 
 inquirer
   .prompt(questions)
@@ -44,7 +18,7 @@ inquirer
     )
 
     fs.copyFile(
-      path.join(__dirname, 'themes', answers.type + '-style.less'),
+      path.join(__dirname, 'themes', answers.theme, answers.type + '-style.less'),
       answers.type + '-style.less',
       (err) => {
         if (err) throw err
