@@ -27,8 +27,7 @@ All the working files are contained in these folders:
 * [Themes](themes/) - for the styling themes
 
 > **Important**  
-> The extension [Markdown Preview Enhanced
-](https://shd101wyy.github.io/markdown-preview-enhanced/#/), available for VSCode and Atom is required, not only for the notes styled preview but also for a better html export.
+> The extension [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/), available for VSCode and Atom is required, not only for the notes' styled preview but also for a better html export.
 
 This is a two versions package:
 
