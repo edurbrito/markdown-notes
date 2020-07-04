@@ -1,4 +1,6 @@
-<img src="./images/logo.png" style="margin-left: auto; margin-right: auto; display: block;">
+<p align="center">
+  <img src="./images/logo.png" style="margin-left: auto; margin-right: auto; display: block; height: 60%">
+</p>
 
 ----
 
@@ -103,6 +105,8 @@ More customizations may come in the future.
 ### [Default Theme](themes/default/)
 
 Some aspects/components of this theme are:
+
+<!--
 |||
 --|--
 | h1 or # | ![](images/default/h1.png) |
@@ -114,6 +118,109 @@ Some aspects/components of this theme are:
 | blockquote or > | ![](images/default/blockquote.png) |
 | table | ![](images/default/table.png) |
 | hr or ---- | Not displayed. It is used for page breaks when printing to pdf. |
+-->
+
+<table style="background-color: white; color: black;">
+
+<tr>
+<td>
+
+h1 or #
+</td>
+<td>
+
+![](images/default/h1.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+h2 or ##
+</td>
+<td>
+
+![](images/default/h2.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+h3 or ###
+</td>
+<td>
+
+![](images/default/h3.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+h4 or ####
+</td>
+<td>
+
+![](images/default/h4.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+h5 or #####
+</td>
+<td>
+
+Similar to h4, but smaller.
+</td>
+</tr>
+
+<tr>
+<td>
+
+h6 or ######
+</td>
+<td>
+
+![](images/default/h6.png)  This will appear with a grey background color when previewing or in html.
+</td>
+</tr>
+
+<tr>
+<td>
+
+blockquote or >
+</td>
+<td>
+
+![](images/default/blockquote.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+table
+</td>
+<td>
+
+![](images/default/table.png)
+</td>
+</tr>
+
+<tr>
+<td>
+
+hr or ----
+</td>
+<td>
+
+Not displayed. It is used for page breaks when printing to pdf.
+</td>
+</tr>
+</table>
 
 ## Contributing
 

@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/edurbrito/markdown-notes.git"
   },
   "dependencies": {
     "inquirer": "^7.3.0"
