@@ -1,7 +1,10 @@
+<img src="./images/logo.png" style="margin-left: auto; margin-right: auto; display: block;">
 
-<h1 style="text-align: center;">markdown-notes</h1>
+----
 
-<h3 style="text-align: center;">Templates for your Note Taking Markdown Workflow</h3>
+<h5 style="text-align: center;">markdown-notes</h1>
+
+<h4 style="text-align: center;">Templates for your Note Taking Markdown Workflow</h3>
 
 ## Contents
 
@@ -117,6 +120,8 @@ Some aspects/components of this theme are:
 **Contributions are all welcome!** 
 
 New templates and new themes are appreciated, as well as new features for expanding this idea or make it better, more functional. 
+
+Whenever a new template is added, the corresponding style for every suitable theme should be also created. Follow the existing example for the Default Theme.
 
 ## License
 
