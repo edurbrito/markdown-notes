@@ -22,6 +22,12 @@ var questions = [
       return val.toLowerCase().replace(/\s/g, "").trim();
     },
   },
+  {
+    type: "confirm",
+    name: "directory",
+    message: 'Create "./images" directory?',
+    default: true,
+  },
 ];
 
 inquirer
@@ -42,15 +48,20 @@ inquirer
         answers.theme +
         "/" +
         answers.type +
-        "-style-" +
-        answers.theme +
-        ".less",
+        "-style.less",
       answers.type + "-style.less",
       (err) => {
         if (err) throw err;
         console.log(`Created ${answers.type}-style.less`);
       }
     );
+    
+    if (answers.directory) {
+      fs.mkdir("images", (err) => {
+        if (err != null && err.code != 'EEXIST') throw err;
+        console.log(`Created images directory`);
+      });
+    }
   })
   .catch((error) => {
     if (error.isTtyError) {
