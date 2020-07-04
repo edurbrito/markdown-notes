@@ -14,6 +14,7 @@
 - [Examples](#examples)
 - [Themes](#themes)
   - [Default Theme](#default-theme)
+- [License](#license)
 
 ## Overview
 
@@ -85,4 +86,19 @@ More customizations may come in the future.
 
 **Contributions are also appreciated!**
 
-### Default Theme
+### [Default Theme](themes/default/)
+
+Some aspects/components of this theme are:
+|||
+--|--
+| h1 or # | ![](images/default/h1.png) |
+| h2 or ## | ![](images/default/h2.png) |
+| h3 or ### | ![](images/default/h3.png) |
+| h4 or #### | ![](images/default/h4.png) |
+| h5 or ##### | Similar to h4, but smaller. |
+| h6 or ###### | ![](images/default/h6.png)  This will appear with a grey background color when previewing or in html. |
+| blockquote or > | ![](images/default/blockquote.png) |
+| table | ![](images/default/table.png) |
+| hr or ---- | Not displayed. It is used for page breaks when printing to pdf. |
+
+## License
