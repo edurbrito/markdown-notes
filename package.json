@@ -3,23 +3,42 @@
   "version": "1.0.0",
   "description": "Templates for your Markdown Notes",
   "main": "md-notes.js",
-  "directories": {"example": "examples"},
-  "scripts": {"start": "node ."},
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "jest --coverage --detectOpenHandles",
+    "pretest": "eslint . --fix"
+  },
   "keywords": [
     "cli",
     "markdown",
     "notes"
   ],
   "author": "edurbrito",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : ""
+    "type": "git",
+    "url": ""
   },
   "dependencies": {
     "inquirer": "^7.3.0"
   },
   "bin": {
     "md-notes": "./md-notes.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.1.0"
+  },
+  "jest": {
+    "coverageDirectory": "./tests/coverage/",
+    "collectCoverage": true
   }
 }
