@@ -12,7 +12,7 @@ var questions = [
     type: 'list',
     name: 'theme',
     message: 'What theme for the note?',
-    choices: ['Default'],
+    choices: ['Default', 'Minimal'],
     filter: function (val) {
       return val.toLowerCase().replace(/\s/g, '').trim()
     }
