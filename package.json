@@ -1,6 +1,6 @@
 {
   "name": "markdown-notes",
-  "version": "1.2",
+  "version": "1.2.0",
   "description": "Templates for your Markdown Notes",
   "main": "md-notes.js",
   "directories": {
