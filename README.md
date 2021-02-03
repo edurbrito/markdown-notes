@@ -19,7 +19,6 @@
 - [Examples](#examples)
 - [Templates](#templates)
 - [Themes](#themes)
-  - [Default Theme](#default-theme)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -89,7 +88,7 @@ There is a [folder](examples/) containing examples of these note templates. They
 
 ## Templates
 
-This folder contains all the available markdown templates to start creating and editing the notes. They may be very similar, but all of them must represent the initial header with all the necessary info for linking the styles and start writing the notes. 
+This [folder](templates/) contains all the available markdown templates to start creating and editing the notes. They may be very similar, but all of them must represent the initial header with all the necessary info for linking the styles and start writing the notes. 
 
 > Every template must have a corresponding .less file in every available theme, following the current naming and structure.
 
@@ -99,12 +98,12 @@ The global font family is also specified in these headers.
 
 ## Themes
 
-Currently, there is only one featured theme, the [Default Theme](themes/default/).  
-More customizations may come in the future. 
+Currently, there are two featured themes:
++ [Default Theme](themes/default/)
++ [Minimal Theme](themes/minimal/)
 
-### [Default Theme](themes/default/)
-
-Some aspects/components of this theme are:
+More customizations may come in the future.
+<br>Some example aspects/components of the Default Theme are:
 
 <!--
 |||
