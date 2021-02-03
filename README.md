@@ -8,6 +8,10 @@
 
 <h4 style="text-align: center;">Templates for your Note Taking Markdown Workflow</h3>
 
+<p align="center">
+<img alt="tests" src="https://github.com/edurbrito/markdown-notes/workflows/tests/badge.svg">
+</p>
+
 ## Contents
 
 - [Contents](#contents)
